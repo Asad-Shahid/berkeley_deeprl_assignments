@@ -68,7 +68,7 @@ class RL_Trainer(object):
         ## AGENT
         #############
 
-        agent_class = self.params['agent_class']
+        agent_class = self.params['agent_class'] #BC Agent
         self.agent = agent_class(self.env, self.params['agent_params'])
 
     def run_training_loop(self, n_iter, collect_policy, eval_policy,
